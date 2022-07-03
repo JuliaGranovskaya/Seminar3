@@ -146,7 +146,8 @@
 //     Console.Write("Введите Z координату второй точки: ");
 //     int Bz = Convert.ToInt32(Console.ReadLine());
 
-//     Console.WriteLine(Math.Round(Math.Sqrt(Math.Pow((Ax - Bx), 2) + Math.Pow((Ay - By), 2) + Math.Pow((Az - Bz), 2))));
+//     double distance = Math.Round(Math.Sqrt(Math.Pow((Ax - Bx), 2) + Math.Pow((Ay - By), 2) + Math.Pow((Az - Bz), 2)), 2);
+//     Console.WriteLine("A"+ (Ax, Ay, Az) +"; B"+ (Bx, By, Bz) +" -> "+ distance);
 // }
 // lenght();
 
