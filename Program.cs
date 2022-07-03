@@ -91,12 +91,80 @@
 // {
 // Console.Write("Number: ");
 // int N = Convert.ToInt32(Console.ReadLine());
-// int count = 1;
 // Console.Write(""+ N +" -> ");
-// while (count <= N)
-//     {
-//         Console.Write(""+ count*count +" ");
-//         count = count + 1;
-//     };
+// if (N > 0)
+// {
+//     for (int count = 1; count <= N; count ++)
+//         Console.Write(count * count + " ");
+// }
+// else
+// {
+//     for (int count = 0; count >= N; count --)
+//         Console.Write(count * count + " ");
+// }
 // }
 // squares();
+
+// Домашнее задание
+// Принять на вход пятизначное число и проверить являетсяли оно палиндромом
+// void palindrome()
+// {
+//     Console.WriteLine("Введите пятизначное число: ");
+//     int number1 = Convert.ToInt32(Console.ReadLine());
+//     if (number1 > 9999 && number1 < 100000)
+//         {
+//             int number2 = number1 % 10 * 10000 + (number1 % 100 - number1 % 10) * 100 + (number1 % 1000 - number1 % 100) + (number1 % 10000 - number1 % 1000) / 100 + (number1 % 100000 - number1 % 10000) / 10000;
+//             if (number1 == number2)
+//                 {
+//                     Console.WriteLine(number1 + "-> да");
+//                 } 
+//             else
+//                 {
+//                     Console.WriteLine(number1 + "-> нет");
+//                 }    
+//         }
+//     else
+//         {
+//             Console.WriteLine("Введено некорректное значение");
+//         }
+// }
+// palindrome();
+
+// Принять на вход координаты двух точек и найти расстояние между ними в 3D пространстве
+// void lenght()
+// {
+//     Console.Write("Введите X координату первой точки: ");
+//     int Ax = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите Y координату первой точки: ");
+//     int Ay = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите Z координату первой точки: ");
+//     int Az = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите X координату второй точки: ");
+//     int Bx = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите Y координату второй точки: ");
+//     int By = Convert.ToInt32(Console.ReadLine());
+//     Console.Write("Введите Z координату второй точки: ");
+//     int Bz = Convert.ToInt32(Console.ReadLine());
+
+//     Console.WriteLine(Math.Round(Math.Sqrt(Math.Pow((Ax - Bx), 2) + Math.Pow((Ay - By), 2) + Math.Pow((Az - Bz), 2))));
+// }
+// lenght();
+
+// Принять на вход число N и выдать таблицу кубов чисел от 1 до N
+// void cube()
+// {
+// Console.Write("Number: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// Console.Write(""+ N +" -> ");
+// if (N > 0)
+// {
+//     for (int count = 1; count <= N; count ++)
+//         Console.Write(Math.Pow(count, 3) + " ");
+// }
+// else
+// {
+//     for (int count = 0; count >= N; count --)
+//         Console.Write(Math.Pow(count, 3) + " ");
+// }
+// }
+// cube();
